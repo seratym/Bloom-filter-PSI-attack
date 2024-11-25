@@ -1,0 +1,125 @@
+% ./bin --universe-size=32 --universe-client-factor=2 --client-set-size=8 --max-set-size=8 --false-positives=10 --trials=1000000 -v
+10 & 8 & 2 &  % fp k U2_fact
+% Bloom filter parameters: BloomFilterParams { bin_count: 3702, seeds: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] }
+% Number of threads: 126
+% Targetting element 115
+% Found 6800164 candidates
+% Finding attack set took: 1324.791523852s
+% Running 1000000 trials took: 3.344101483s
+0.99921 \\ % [999214, 786, 1000000, 0, 0] = [tp, fn, tn, fp, p2_hits_target]
+% ./bin --universe-size=32 --universe-client-factor=3 --client-set-size=8 --max-set-size=8 --false-positives=10 --trials=1000000 -v
+10 & 8 & 3 &  % fp k U2_fact
+% Bloom filter parameters: BloomFilterParams { bin_count: 3702, seeds: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] }
+% Number of threads: 62
+% Targetting element 115
+% Found 24705568 candidates
+% Finding attack set took: 7517.211444905s
+% Running 1000000 trials took: 4.375993276s
+0.82421 \\ % [824212, 175788, 1000000, 0, 0] = [tp, fn, tn, fp, p2_hits_target]
+% ./bin --universe-size=32 --universe-client-factor=4 --client-set-size=8 --max-set-size=8 --false-positives=10 --trials=1000000 -v
+10 & 8 & 4 &  % fp k U2_fact
+% Bloom filter parameters: BloomFilterParams { bin_count: 3702, seeds: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] }
+% Number of threads: 62
+% Targetting element 115
+% Found 40209441 candidates
+% Finding attack set took: 19440.427402757s
+% Running 1000000 trials took: 4.306318002s
+0.60781 \\ % [607810, 392190, 1000000, 0, 0] = [tp, fn, tn, fp, p2_hits_target]
+% ./bin --universe-size=32 --universe-client-factor=2 --client-set-size=12 --max-set-size=12 --false-positives=10 --trials=1000000 -v
+10 & 12 & 2 &  % fp k U2_fact
+% Bloom filter parameters: BloomFilterParams { bin_count: 59102, seeds: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] }
+% Number of threads: 126
+% Targetting element 7012
+% Found 494277 candidates
+% Finding attack set took: 34246.74430959s
+% Running 1000000 trials took: 53.119778038s
+1.00000 \\ % [1000000, 0, 1000000, 0, 2000000] = [tp, fn, tn, fp, p2_hits_target]
+% ./bin --universe-size=32 --universe-client-factor=2 --client-set-size=16 --max-set-size=16 --false-positives=10 --trials=1000000 -v
+10 & 16 & 2 &  % fp k U2_fact
+% Bloom filter parameters: BloomFilterParams { bin_count: 945493, seeds: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] }
+% Number of threads: 62
+% Targetting element 2963
+% Found 30786 candidates
+% Finding attack set took: 10.287658127s
+% Running 1000000 trials took: 828.936026117s
+1.00000 \\ % [1000000, 0, 1000000, 0, 0] = [tp, fn, tn, fp, p2_hits_target]
+
+20 & 8 & $2 \cdot k$ &  % fp k \universe_2_fact
+% Bloom filter parameters: BloomFilterParams { bin_count: 7403, seeds: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19] }
+% Number of threads: 62
+% Targetting element 309
+% Found 439350 candidates
+% Finding attack set took: 174.748867725s
+% Running 1000000 trials took: 8.070841553s
+0.15473 \\ % [154728, 845272, 1000000, 0, 0] = [tp, fn, tn, fp, p2_hits_target]
+20 & 8 & $3 \cdot k$ &  % fp k \universe_2_fact
+% Bloom filter parameters: BloomFilterParams { bin_count: 7403, seeds: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19] }
+% Number of threads: 62
+% Targetting element 432
+% Found 3539138 candidates
+% Finding attack set took: 3252.431644988s
+% Running 1000000 trials took: 7.956742599s
+0.00601 \\ % [6010, 993990, 1000000, 0, 0] = [tp, fn, tn, fp, p2_hits_target]
+20 & 8 & $4 \cdot k$ &  % fp k \universe_2_fact
+% Bloom filter parameters: BloomFilterParams { bin_count: 7403, seeds: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19] }
+% Number of threads: 62
+% Targetting element 702
+% Found 6972052 candidates
+% Finding attack set took: 12079.564572748s
+% Running 1000000 trials took: 7.830633697s
+0.00203 \\ % [2027, 997973, 1000000, 0, 0] = [tp, fn, tn, fp, p2_hits_target]
+% ./bin --universe-size=32 --universe-client-factor=2 --client-set-size=12 --max-set-size=12 --false-positives=20 --trials=1000000 -v
+20 & 12 & 2 &  % fp k U2_fact
+% Bloom filter parameters: BloomFilterParams { bin_count: 118202, seeds: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19] }
+% Number of threads: 62
+% Targetting element 1664
+% Found 33688 candidates
+% Finding attack set took: 4964.477585912s
+% Running 1000000 trials took: 82.873900697s
+0.98032 \\ % [980322, 19678, 1000000, 0, 0] = [tp, fn, tn, fp, p2_hits_target]
+% ./bin --universe-size=32 --universe-client-factor=2 --client-set-size=16 --max-set-size=16 --false-positives=20 --trials=1000000 -v
+20 & 16 & 2 &  % fp k U2_fact
+% Bloom filter parameters: BloomFilterParams { bin_count: 1890985, seeds: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19] }
+% Number of threads: 62
+% Targetting element 64350
+% Found 2498 candidates
+% Finding attack set took: 16.446204895s
+% Running 1000000 trials took: 1312.939659507s
+0.68491 \\ % [684906, 315094, 1000000, 0, 0] = [tp, fn, tn, fp, p2_hits_target]
+
+% ./bin --universe-size=32 --universe-client-factor=2 --client-set-size=8 --max-set-size=8 --false-positives=30 --trials=1000000 -v
+30 & 8 & 2 &  % fp k U2_fact
+% Bloom filter parameters: BloomFilterParams { bin_count: 11103, seeds: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29] }
+% Number of threads: 126
+% Targetting element 505
+% Found 30995 candidates
+% Finding attack set took: 38.828232883s
+% Running 1000000 trials took: 8.780793347s
+0.03485 \\ % [34847, 965153, 1000000, 0, 0] = [tp, fn, tn, fp, p2_hits_target]
+% ./bin --universe-size=32 --universe-client-factor=3 --client-set-size=8 --max-set-size=8 --false-positives=30 --trials=1000000 -v
+30 & 8 & 3 &  % fp k U2_fact
+% Bloom filter parameters: BloomFilterParams { bin_count: 11103, seeds: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29] }
+% Number of threads: 62
+% Targetting element 505
+% Found 1373824 candidates
+% Finding attack set took: 4070.136164812s
+% Running 1000000 trials took: 11.321393496s
+0.00003 \\ % [31, 999969, 1000000, 0, 0] = [tp, fn, tn, fp, p2_hits_target]
+% ./bin --universe-size=32 --universe-client-factor=2 --client-set-size=12 --max-set-size=12 --false-positives=30 --trials=1000000 -v
+30 & 12 & 2 &  % fp k U2_fact
+% Bloom filter parameters: BloomFilterParams { bin_count: 177302, seeds: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29] }
+% Number of threads: 126
+% Targetting element 446
+% Found 2752 candidates
+% Finding attack set took: 10.254981336s
+% Running 1000000 trials took: 113.834269451s
+0.02202 \\ % [22025, 977975, 1000000, 0, 0] = [tp, fn, tn, fp, p2_hits_target]
+% ./bin --universe-size=32 --universe-client-factor=2 --client-set-size=16 --max-set-size=16 --false-positives=30 --trials=1000000 -v
+30 & 16 & 2 &  % fp k U2_fact
+% Bloom filter parameters: BloomFilterParams { bin_count: 2836477, seeds: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29] }
+% Number of threads: 62
+% Targetting element 19316
+% Found 156 candidates
+% Finding attack set took: 23.856567693s
+% Running 1000000 trials took: 2886.628259766s
+0.00093 \\ % [932, 999068, 1000000, 0, 0] = [tp, fn, tn, fp, p2_hits_target]

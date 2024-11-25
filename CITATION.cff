@@ -1,0 +1,41 @@
+cff-version: 1.2.0
+title: Attack on Bloom filter-based PSI schemes
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - family-names: van Assen
+    given-names: Jorrit
+    orcid: 'https://orcid.org/0009-0004-8217-4529'
+  - family-names: Vos
+    given-names: Jelle
+    orcid: 'https://orcid.org/0000-0002-3979-9740'
+repository-code: 'https://github.com/seratym/Bloom-filter-PSI-attack'
+license: MIT
+version: 0.1.0
+date-released: '2024-11-25'
+preferred-citation:
+  type: article
+  authors:
+  - family-names: Vos
+    given-names: Jelle
+    orcid: 'https://orcid.org/0000-0002-3979-9740'
+  - family-names: van Assen
+    given-names: Jorrit
+    orcid: 'https://orcid.org/0009-0004-8217-4529'
+  - family-names: Koster
+    given-names: Tjitske Ollie
+    orcid: 'https://orcid.org/0009-0003-9852-1225'
+  - family-names: Markatou
+    given-names: Evangelia Anna
+    orcid: 'https://orcid.org/0009-0004-8217-4529'
+  - family-names: Erkin
+    given-names: Zekeriya
+    orcid: 'https://orcid.org/0000-0001-8932-4703'
+  identifiers:
+    - type: other
+      value: "arXiv:2103.06681"
+      description: The ArXiv preprint of the paper
+  title: "On the Insecurity of Bloom Filter-Based Private Set Intersections"
+  year: 2024
